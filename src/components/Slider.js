@@ -1,18 +1,18 @@
 import React from "react";
 import Slider from "react-slick";
-import { Card} from "react-bootstrap";
 import styled from "styled-components";
+import { Card, Button } from "react-bootstrap";
 
-import poster1 from "../images/bak_1.jpg";
-import poster2 from "../images/bak_2.jpg";
-import poster3 from "../images/bak_3.jpg";
-import poster4 from "../images/bak_4.jpg";
-import poster5 from "../images/bak_5.jpg";
-import poster6 from "../images/bak_6.jpg";
-import poster7 from "../images/bak_7.jpg";
-import poster8 from "../images/bak_8.jpg";
+import poster1 from "../../public/images/bak_1.jpg";
+import poster2 from "../../public/images/bak_2.jpg";
+import poster3 from "../../public/images/bak_3.jpg";
+import poster4 from "../../public/images/bak_4.jpg";
+import poster5 from "../../public/images/bak_5.jpg";
+import poster6 from "../../public/images/bak_6.jpg";
+import poster7 from "../../public/images/bak_7.jpg";
+import poster8 from "../../public/images/bak_8.jpg";
 
-
+import "./blog.css";
 const Sliders = () => {
   const settings = {
     dots: true,
@@ -55,7 +55,6 @@ const Sliders = () => {
   const style = {
     width: "18rem",
     margin: "0px 15px 15px"
-
   };
   const StyledSlider = styled(Slider)`
     .slick-prev:before {
