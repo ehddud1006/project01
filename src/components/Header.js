@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-import { BiMenuAltRight } from "react-icons/bi";
-import { AiOutlineClose } from "react-icons/ai";
-
 import classes from "./Header.module.scss";
 import { Link, useHistory } from "react-router-dom";
 
@@ -38,14 +35,14 @@ const Header = () => {
 
     const ctaClickHandler = () => {
         menuToggleHandler();
-        history.push("/page-cta");
+        history.push("/SignUp");
     };
 
     return (
         <header className={classes.header}>
             <div className={classes.header__content}>
                 <Link to="/" className={classes.header__content__logo}>
-                    navbar
+                    오늘의 배달
                 </Link>
                 <nav
                     className={`${classes.header__content__nav} ${
@@ -54,28 +51,33 @@ const Header = () => {
                 >
                     <ul>
                         <li>
-                            <Link to="/page-one" onClick={menuToggleHandler}>
-                                PageOne
+                            <Link to="/RecomD" onClick={menuToggleHandler}>
+                                추천
                             </Link>
                         </li>
                         <li>
-                            <Link to="/page-two" onClick={menuToggleHandler}>
-                                PageTwo
+                            <Link to="/ClassicF" onClick={menuToggleHandler}>
+                                분류
                             </Link>
                         </li>
                         <li>
-                            <Link to="/page-three" onClick={menuToggleHandler}>
-                                PageThree
+                            <Link to="/RestauR" onClick={menuToggleHandler}>
+                                맛집
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/Inform" onClick={menuToggleHandler}>
+                                회원정보
                             </Link>
                         </li>
                     </ul>
-                    <button onClick={ctaClickHandler}>CTA Page</button>
+                    <button onClick={ctaClickHandler}>Sign up</button>
                 </nav>
                 <div className={classes.header__content__toggle}>
                     {!menuOpen ? (
-                        <BiMenuAltRight onClick={menuToggleHandler} />
+                        <i className='fas fa-bars' onClick={menuToggleHandler} />
                     ) : (
-                        <AiOutlineClose onClick={menuToggleHandler} />
+                        <i className='fas fa-times' onClick={menuToggleHandler} />
                     )}
                 </div>
             </div>

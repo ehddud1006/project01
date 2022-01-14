@@ -1,0 +1,46 @@
+@import "./../styles/variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital@1&display=swap');
+
+$Exo2 : 'Exo 2', sans-serif;
+.container {
+    
+    
+    width:100%;
+    background: white;
+
+    z-index: 99;
+    font-family: $Exo2;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    
+
+
+    &__content {
+
+        background: $primary;
+        padding: 1.5rem;
+        border-radius: 5px ;
+
+        &__title {
+        font-size: 2.5rem;
+        width:50%;
+        color: rgb(255, 255, 255);
+    }
+
+    &__body{
+        width:25%;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+    }
+
+    &__link{
+        width:25%;
+        color: rgb(255, 255, 255);
+    }
+    
+    }
+
+    
+}
