@@ -164,3 +164,12 @@ h6 {
 .postTitle {
   font-family: "Noto Sans KR", sans-serif;
 }
+
+.container.container_padding {
+  padding: 0px;
+  padding-left: 20px;
+}
+
+.recipe_header {
+  margin-top: 15px;
+}

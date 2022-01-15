@@ -15,7 +15,7 @@ import poster8 from "../../public/images/bak_8.jpg";
 import "./blog.css";
 const Sliders = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -32,7 +32,7 @@ const Sliders = () => {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
+          dots: false
         }
       },
       {
@@ -54,7 +54,7 @@ const Sliders = () => {
   };
   const style = {
     width: "18rem",
-    margin: "0px 15px 15px"
+    margin: "0px "
   };
   const StyledSlider = styled(Slider)`
     .slick-prev:before {
@@ -102,7 +102,7 @@ const Sliders = () => {
   ];
   return (
     <div>
-      <h2>핵꿀팁! 레시피 모음</h2>
+      <h2 className="recipe_header">핵꿀팁! 레시피 모음</h2>
       <StyledSlider {...settings}>
         {posts.map((index) => {
           return (

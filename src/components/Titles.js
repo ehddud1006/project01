@@ -24,7 +24,7 @@ const Title = () => {
           </p>
         </div>
       </div>
-      <div className="container">
+      <div className="container container_padding">
         <Slider></Slider>
       </div>
     </div>
